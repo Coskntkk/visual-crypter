@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "visual-crypter"
+version = "0.1.0"
+description = "Hide and retrieve text inside images using AES encryption"
+authors = [{ name="Coskun Atak", email="coskntkk@gmail.com" }]
+license = "MIT"
+dependencies = [
+    "cryptography",
+    "Pillow"
+]
+
+[project.scripts]
+visualcrypter = "visual_crypter.cli:main"
